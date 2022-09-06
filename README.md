@@ -1,0 +1,1 @@
+# basic grapql course PLATZY
