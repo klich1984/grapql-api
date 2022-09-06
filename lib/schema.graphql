@@ -1,0 +1,14 @@
+type Course {
+	_id: ID!						#requerido u obligatorio(!)
+	title: String!			#requerido u obligatorio(!)
+	teacher: String
+	description: String!	#requerido u obligatorio(!)
+	topic: String
+}
+
+type Query {
+  "Obtiene todos los cursos y devuelve un Arreglo de Cursos"
+  getCourses: [Course]
+	"Devuelve un solo curso"
+	getCourse(id: ID!): Course  # Recibe un parametro id y es obligatorio(!)
+}
